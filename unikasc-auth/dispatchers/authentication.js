@@ -28,7 +28,7 @@ const generateAccessToken = (id) => {
 const generateAsync = (id) => {
   return new Promise(resolve => {
     const accessToken = generateAccessToken(id)
-    return resolve({accessToken})
+    return resolve({accessToken, id})
   })
 }
 

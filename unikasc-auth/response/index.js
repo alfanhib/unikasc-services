@@ -11,7 +11,8 @@ exports.successResponseWithData = (response, message, method, status) => ({
   method: method,
   time: new Date().toISOString(),
 	status: status,
-	data: response
+  data: response,
+  id: response.id[0].id
 })
 
 exports.successResponseWithoutData = (message, method, status) => ({
